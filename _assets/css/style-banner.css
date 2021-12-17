@@ -1,0 +1,46 @@
+#carousel-banner {
+    background:#503291;
+    margin-bottom: 30px;
+}
+
+#carousel-banner .carousel-item .img-fluid {
+    width:100%;
+}
+
+#carousel-banner .carousel-item a {
+    display: block;
+    width:100%;
+}
+
+#carousel-banner .carousel-control-prev-icon {
+    background-image: url('../../_assets/img/previous.svg');
+}
+
+#carousel-banner .carousel-control-next-icon {
+    background-image: url('../../_assets/img/next.svg');
+}
+
+#carousel-banner .carousel-control-next-icon, .carousel-control-prev-icon {
+    /* Use to adjust size of icons */
+    width: 3rem;
+    height: 3rem;
+}
+
+#carousel-banner .carousel-caption h2 {
+    font-family: merck;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #503291;
+    color: #fff;
+    z-index: 10;
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+    .navbar-brand img { 
+        width: 188px;
+        height: 50px;
+    }
+}

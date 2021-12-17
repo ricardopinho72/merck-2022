@@ -1,0 +1,122 @@
+body { background-color: #503291; }
+
+@font-face {
+    font-family: merck;
+    src: url(_assets/fonts/merck/merck-webfont.woff);
+}
+
+.bg-custom-1 {
+    margin: 20px 10px;
+    background-color: #503291;
+}
+
+
+/* //////////////////////////////// TITLE SECTION */
+
+.title-section {
+    padding: 20px 10px;
+}
+
+.title-section h2 {
+    font-family: merck;
+    font-size: 1.3em;
+    color: #ffc832;
+    margin-bottom: 2px;
+}
+
+
+/* //////////////////////////////// BUTTON SECTION */
+
+.button-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.button-section .btn.btn-md {
+    width: 200px;
+    padding: 15px 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.button-section .btn-primary {
+    color: #0f69af;
+    background-color: #96d7d2;
+    border-color: #96d7d2;
+}
+
+.button-section .btn {
+    border-radius: 30px;
+}
+
+
+
+/* //////////////////////////////// ICONS - TOP VIDEOS */
+
+.icons-top-video {
+    display: inline-block;
+}
+
+.icons-top-video img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* //////////////////////////////// MODAL VIDEOS */
+
+#myModalVideo .modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+  }
+
+#myModalVideo .modal-body {
+  position:relative;
+  padding:0px;
+}
+
+#myModalVideo .close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+
+
+
+#myModalPodcast .modal-dialog {
+    max-width: 300px;
+    /* margin: 30px auto; */
+}
+
+#myModalPodcast .modal-body {
+  position:relative;
+  padding:0px;
+}
+
+#myModalPodcast .modal-title {
+    color: #ffc832;
+}
+
+#myModalPodcast .close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+
+
+#myModalText .modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+}

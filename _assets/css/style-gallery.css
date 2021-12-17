@@ -1,0 +1,271 @@
+/* bootstrap mod: carousel controls */
+
+#carousel-gallery .carousel-control-prev-icon {
+    background-image: url('../../_assets/img/previous.svg');
+}
+
+#carousel-gallery .carousel-control-next-icon {
+    background-image: url('../../_assets/img/next.svg');
+}
+
+#carousel-gallery .carousel-control-next-icon, .carousel-control-prev-icon {
+    /* Use to adjust size of icons */
+    width: 2rem;
+    height: 2rem;
+}
+
+#carousel-gallery .carousel-caption {
+    position: relative;
+    left: 0;
+    top: 0;
+    color: #fff;
+    text-align: left;
+}
+
+#carousel-gallery .carousel-caption h3 {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+#carousel-gallery .carousel-caption p {
+    font-size: 0.9em;
+}
+
+
+/* medium - display 4  */
+@media (min-width: 768px) {
+    #carousel-gallery .carousel-inner .carousel-item-right.active,
+    #carousel-gallery .carousel-inner .carousel-item-next {
+        transform: translateX(33.33333%);
+    }
+    
+    #carousel-gallery .carousel-inner .carousel-item-left.active, 
+    #carousel-gallery .carousel-inner .carousel-item-prev {
+        transform: translateX(-33.33333%);
+    }
+}
+
+/* large - display 5 */
+@media (min-width: 992px) {
+    #carousel-gallery .carousel-inner .carousel-item-right.active,
+    #carousel-gallery .carousel-inner .carousel-item-next {
+        transform: translateX(20%);
+    }
+    
+    #carousel-gallery .carousel-inner .carousel-item-left.active, 
+    #carousel-gallery .carousel-inner .carousel-item-prev {
+        transform: translateX(-20%);
+    }
+}
+
+#carousel-gallery .carousel-inner .carousel-item-right,
+#carousel-gallery .carousel-inner .carousel-item-left { 
+    transform: translateX(0);
+}
+
+
+/* gallery slider */
+#carousel-gallery .carousel-inner .carousel-item.active,
+#carousel-gallery .carousel-inner .carousel-item-next,
+#carousel-gallery .carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    #carousel-gallery .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    #carousel-gallery .carousel-inner .carousel-item > div:first-child {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+/* modal carousel */
+.modal .carousel-indicators {
+  margin: 0;
+  bottom: -34px;
+  left: auto;
+}
+
+.modal .carousel-indicators > li {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  background: transparent;
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.modal .carousel-indicators > li.active {
+  background: #fff;
+}
+
+.modal .close, .modal .carousel-control-prev, .modal .carousel-control-next {
+  opacity: 1;
+}
+
+@media (min-width: 992px) {
+  .modal .carousel-control-prev {
+    left: -140px;
+  }
+
+  .modal .carousel-control-next {
+    right: -140px;
+  }
+}
+
+
+/* modal mods */
+.modal {
+  background: rgba(34, 49, 63, 0.9);
+}
+
+.modal-dialog {
+  max-width: 80% !important;
+}
+
+.modal-header {
+  border: none !important;
+}
+
+.modal-content {
+  border: none !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+}
+
+.modal-body {
+  padding: 0 !important;
+}
+
+.close img {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.modal-footer {
+  padding: 2rem 0;
+  border: none !important;
+}
+
+
+
+/* bootstrap mod addons */
+.w-90 {
+  width: 90%;
+}
+
+.col-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xl-5 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-5 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+@media (min-width: 576px){
+  .col-sm-5 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+@media (min-width: 768px){
+  .col-md-5 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+@media (min-width: 992px){
+  .col-lg-5 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+@media (min-width: 1200px){
+  .col-xl-5 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+
+
+
+
+
+.video-container {
+  position:relative;
+  padding-bottom:56.25%;
+  padding-top:30px;
+  height:0;
+  overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+
+/* //////////////////////////////// PROGRESS BAR */
+
+.keep-watching img {
+    width: 89%;
+    height: auto;
+}
+
+.keep-watching .progress {
+    height: 3px;
+    overflow: visible;
+    margin: 10px 25px;
+}
+
+ .keep-watching .progress .progress-bar {
+     position: relative
+ }
+
+ .progress .progress-bar {
+     height: 100%;
+     color: inherit
+ }
+
+ .bg-c-red {
+     background: #e61e50
+ }
+
+ .keep-watching .progress .progress-bar:after {
+     content: "";
+     background: #fff;
+     position: absolute;
+     right: -6px;
+     top: -4px;
+     border: 3px solid #e61e50;
+     border-radius: 50%;
+     width: 15px;
+     height: 15px
+ }
+
+
+@media only screen and (min-width: 992px) {
+    .keep-watching {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
+
+
+
